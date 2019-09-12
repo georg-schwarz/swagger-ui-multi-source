@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/swagger-ui-multi-source.iml" filepath="$PROJECT_DIR$/swagger-ui-multi-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swagger-ui-multi-source.main.iml" filepath="$PROJECT_DIR$/.idea/modules/swagger-ui-multi-source.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swagger-ui-multi-source.test.iml" filepath="$PROJECT_DIR$/.idea/modules/swagger-ui-multi-source.test.iml" />
+    </modules>
+  </component>
+</project>
