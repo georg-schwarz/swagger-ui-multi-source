@@ -1,0 +1,1 @@
+This project provides a docker image for serving a Swagger UI with multiple selectable APIs.
