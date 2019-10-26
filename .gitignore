@@ -1,5 +1,6 @@
 
 .idea/*
+*.iml
 
 # Created by https://www.gitignore.io/api/java,gradle,eclipse,intellij
 # Edit at https://www.gitignore.io/?templates=java,gradle,eclipse,intellij
