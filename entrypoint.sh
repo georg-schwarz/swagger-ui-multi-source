@@ -15,7 +15,7 @@ let line_number=0
 while read -r line; do
     echo "app.swagger.resources[$line_number].name=$(echo $line | cut -d';' -f1)" >> application.properties
     echo "app.swagger.resources[$line_number].location=$(echo $line | cut -d';' -f2)" >> application.properties
-    echo "app.swagger.resources[$line_number].version=$(echo $line | cut -d';' -f3)" >> application.properties
+    echo "app.swagger.resources[$line_number].swaggerVersion=$(echo $line | cut -d';' -f3)" >> application.properties
     line_number=$((line_number+1))
 done < "env-variables.txt"
 
