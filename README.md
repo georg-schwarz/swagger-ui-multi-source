@@ -13,8 +13,8 @@ services:
   swagger-ui:
     image: georgschwarz/swagger-ui-multi-source:0.1.0
     environment:
-      - SWAGGER_RESOURCE_1=test1;test1:8080/swagger-doc;2.0
-      - SWAGGER_RESOURCE_2=test2;test2:8080/swagger-doc;2.0
+      - SWAGGER_RESOURCE_1=test1;https://petstore.swagger.io/v2/swagger.json;2.0
+      - SWAGGER_RESOURCE_2=test2;https://petstore.swagger.io/v2/swagger.json;2.0
     ports:
       - 8080:8080
 ```
