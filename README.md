@@ -6,7 +6,18 @@ This project provides a docker image for serving a Swagger UI with multiple sele
 
 Use the image provided on [DockerHub](https://hub.docker.com/r/georgschwarz/swagger-ui-multi-source) and add sources by using environment variables! Environment variables have to be prefixed with `SWAGGER_RESOURCE_`  in order to be added to the configuration. The value of the environment variable has to follow the pattern `{api_name};{swagger_doc_location};{sawagger_version}`.
 
-Please refer the examples in the `/examples` directory.
+```yml
+version: '3.7'
+
+services:
+  swagger-ui:
+    image: georgschwarz/swagger-ui-multi-source:0.1.0
+    environment:
+      - SWAGGER_RESOURCE_1=test1;https://petstore.swagger.io/v2/swagger.json;2.0
+      - SWAGGER_RESOURCE_2=test2;https://petstore.swagger.io/v2/swagger.json;2.0
+    ports:
+      - 8080:8080
+```
 
 The configured Swagger UI will be available under `http://localhost:{your_mapped_port}/`
 
