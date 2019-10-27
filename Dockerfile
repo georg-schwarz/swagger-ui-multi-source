@@ -29,8 +29,12 @@ FROM adoptopenjdk/openjdk12-openj9:alpine-slim
 # Pull the built files from the builder container
 COPY --from=builder /builder/build/libs/*.jar /app.jar
 
+# Pull the configuration script
+COPY entrypoint.sh ./entrypoint.sh
+RUN chmod +x entrypoint.sh
+
 # Expose port
 EXPOSE 8080
 
-# Do the same as ./gradlew appengineRun for starting the dev server
-ENTRYPOINT ["/opt/java/openjdk/bin/java", "-jar", "app.jar"]
+# Generate config and run application
+ENTRYPOINT ["/bin/sh", "/entrypoint.sh"]
