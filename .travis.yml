@@ -9,6 +9,7 @@ env:
     - IMAGE_NAME_TAGGED=${DOCKERHUB_USER}/wahlzeit:${TRAVIS_TAG}
 
 script:
+  - bash -c 'shopt -s globstar nullglob; shellcheck **/*.{sh,ksh,bash}'
   - docker build -t ${IMAGE_NAME} .
 
 deploy:
