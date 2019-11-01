@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/georg-schwarz/swagger-ui-multi-source.svg?branch=master)](https://travis-ci.org/georg-schwarz/swagger-ui-multi-source)
+![tag](https://img.shields.io/github/v/tag/georg-schwarz/swagger-ui-multi-source.svg)
+![license](https://img.shields.io/github/license/georg-schwarz/swagger-ui-multi-source.svg)
 
 This project provides a docker image for serving a Swagger UI with multiple selectable APIs, like of multiple microservices.
 
