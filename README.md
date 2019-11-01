@@ -4,6 +4,9 @@
 
 This project provides a docker image for serving a Swagger UI with multiple selectable APIs, like of multiple microservices.
 
+**OUTDATED**: Swagger UI added a feature to support multiple APIs via [urls](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md) parameter
+
+
 # Usage
 
 Use the image provided on [DockerHub](https://hub.docker.com/r/georgschwarz/swagger-ui-multi-source) and add sources by using environment variables! Environment variables have to be prefixed with `SWAGGER_RESOURCE_`  in order to be added to the configuration. The value of the environment variable has to follow the pattern `{api_name};{swagger_doc_location};{sawagger_version}`.
